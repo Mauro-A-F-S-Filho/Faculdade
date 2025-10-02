@@ -1,0 +1,10 @@
+print('Olá seja bem vindo a loja atacadista RETRORECORDS de Mauro Antonio Ferreira Santos Filho')
+x = float(int(input('digite o Valor Unitário do disco:'))) #x = preço
+y = float(int(input('digite a quantidade de cópias desejada:'))) #y= quantidade
+vt = x*y #valor total
+print(' o valortotal é de {}'.format(vt))
+desconto = vt #sem desconto
+if (y >= 200 and y < 1000): desconto = vt * (95 / 100) #desconto de 5% quando comprados entre 200 e 999 unidades
+elif (y >= 1000 and y < 2000): desconto = vt * (90 / 100) #desconto de 10% quando comprados de 1000 a 1999 unidades
+else: desconto = vt * (85 / 100) #desconto de 15% quando comprados mais de 2000 unidades
+print(' o valor com desconto é de {}'.format(desconto))
